@@ -16,7 +16,7 @@ COPY package*.json ./
 RUN npm install --production
 
 # Copy the dependencies into a Slim Node docker image
-FROM node:10-slim
+FROM node:14.21.3-bullseye-slim
   
 WORKDIR "/app"
 
